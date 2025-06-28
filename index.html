@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,32 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Love You Forever 💖</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 </head>
 <body>
+  <!-- Lottie Animations -->
   <div id="heart" class="lottie"></div>
   <div id="flower" class="lottie"></div>
+
+  <!-- Main Content -->
   <div class="content">
     <div class="image-frame">
-      <img src="assets/images/bg.jpg" class="love-image" alt="Love Image" />
+      <img src="assets/images/bg.jpg" class="love-image" alt="Love" />
     </div>
+
     <div class="blur-card">
       <p class="love-text">
-        <span class="first-line"> Dear Love 💖</span><br/>
+        <span class="first-line">Love you Lott my partner, To be my forever. 💖</span><br/>
         Your smile, Your Face, Your cuteness, Your Body Language, Your aggressiveness,
         Your hairstyle, Your Lipsticks, Your Look (On Shararaaaaa), Your Earrings,
         Your Chaniya-choli — everything is the best for me which I love 😘💝<br/>
         You are my sunshine, my peace, and my favorite reason to smile. 💖
         When you came into my life, everything became special and beautiful.<br/>
         When I met you, I understood what love really is and what it can do. You brought a smile to my face in every moment. You have been with me everywhere, supporting me, baby.<br/>
-      
         To my love,<br/>
         I promise you that I will never let you go from my side.❣️ I will always stand by you in every situation, cheering you up and making you happy.💕<br/>
         In any phase of life, I will be there to support you. In bad times, I will stand in front of you and protect you. I promise that you will never regret choosing me.
         I am sorry for all the times I behaved badly. I am so sorry, my love.🥺
         I will never lose you.....🥺💝<br/>
-        I love you always My Love💝, My Wifeyy👰, My Mine🤌, My Hubby💏, My Doremon🫶, My cutuuuu piee😘, My Life-Partner💐, My forever-Love🥺💝, My Everything 💋❤️
+        I love you always My Love💝, My Wifeyy👰, My Mine🤌, My Hubby💏, My Doremon🫶, My cutuuuu piee😘, My Life-Partner💐, My forever-Love🥺💝, My Everything 💋❤️<br/>
       </p>
     </div>
   </div>
+
+  <script>
+    const heartAnimation = lottie.loadAnimation({
+      container: document.getElementById('heart'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'assets/lottie/heart.json'
+    });
+
+    const flowerAnimation = lottie.loadAnimation({
+      container: document.getElementById('flower'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'assets/lottie/flower.json'
+    });
+  </script>
 </body>
 </html>
